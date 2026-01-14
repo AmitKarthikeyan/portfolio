@@ -62,7 +62,7 @@ const HeroSection = () => {
   });
 
   return (
-    <section id='hero' className='bg-main-bg'>
+    <section id='hero' className='bg-main-bg page-section'>
       <div className='hero-container'>
         <div className='hero-content opacity-0'>
           <div className='overflow-hidden'>
@@ -79,11 +79,11 @@ const HeroSection = () => {
           </h2>
 
           <div className='flex gap-4 md:mt-16 mt-10 flex-wrap'>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='hero-button'>
+            <a href="/Amit_Karthikeyan_Resume.pdf" target="_blank" rel="noopener noreferrer" className='hero-button'>
               <p>Resume</p>
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/AmitKarthikeyan" 
               target="_blank" 
               rel="noopener noreferrer"
               className='hero-button-secondary'
@@ -94,7 +94,7 @@ const HeroSection = () => {
               <p>GitHub</p>
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/amit-karthikeyan" 
               target="_blank" 
               rel="noopener noreferrer"
               className='hero-button-secondary'
@@ -109,9 +109,9 @@ const HeroSection = () => {
 
         {/* Bouncing Arrow */}
         <div className='absolute bottom-10 left-1/2 -translate-x-1/2 z-20'>
-          <a href="#about" onClick={(e) => {
+          <a href="#experience" onClick={(e) => {
             e.preventDefault();
-            document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('#experience')?.scrollIntoView({ behavior: 'smooth' });
           }}>
             <div className='bouncing-arrow'>
               <svg 

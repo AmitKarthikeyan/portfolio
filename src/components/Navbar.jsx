@@ -8,8 +8,8 @@ const Navbar = () => {
     const [activeSection, setActiveSection] = useState('hero');
     
     const navItems = [
-        { name: 'Hero', href: '#hero' },
-        { name: 'About', href: '#about' },
+        { name: 'About', href: '#hero' },
+        { name: 'Experience', href: '#experience' },
         { name: 'Projects', href: '#projects' },
         { name: 'Skills', href: '#skills' },
         { name: 'Contact', href: '#contact' }
@@ -37,7 +37,7 @@ const Navbar = () => {
         handleScroll(); // Initial check
 
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [navItems]);
 
     const handleClick = (e, href) => {
         e.preventDefault();

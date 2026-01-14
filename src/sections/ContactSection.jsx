@@ -30,10 +30,10 @@ const ContactSection = () => {
   });
 
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section page-section">
       <div className="container mx-auto py-20 px-5">
         <div className="overflow-hidden mb-16">
-          <h1 className="general-title text-center">Get In Touch</h1>
+          <h1 className="general-title text-center">Contact</h1>
         </div>
 
         <div className="max-w-2xl mx-auto contact-form">

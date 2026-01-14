@@ -42,10 +42,10 @@ const SkillsSection = () => {
   });
 
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section page-section">
       <div className="container mx-auto py-20 px-5">
         <div className="overflow-hidden mb-16">
-          <h1 className="general-title text-center">Skills & Expertise</h1>
+          <h1 className="general-title text-center">Skills</h1>
         </div>
 
         <div className="max-w-4xl mx-auto">
