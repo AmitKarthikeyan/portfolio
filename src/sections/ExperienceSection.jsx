@@ -5,35 +5,23 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Senior Software Engineer",
-      company: "Tech Company",
-      period: "2022 - Present",
+      title: "Software Engineer",
+      company: "Autoinvent",
+      period: "July 2025 - Present",
       description: [
-        "Led development of scalable web applications serving 100k+ users",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored junior developers and conducted code reviews",
+        "Architected a RAG pipeline using Google Gemini and vector embeddings to automate legal claim generation, processing unstructured text inputs with less than 2 seconds latency",
+        "Developed a scalable React 18 + Vite front-end with real-time document updates and responsive UI, supporting concurrent editing and smooth navigation across complex patent documents",
+        "Engineered a multi-tenant data layer using Firestore and Cloud KMS, enforcing row-level security policies to ensure strict data isolation for legal compliance",
       ],
     },
     {
       id: 2,
-      title: "Full Stack Developer",
-      company: "Startup Inc",
-      period: "2020 - 2022",
+      title: "Software Engineer Intern",
+      company: "DMS Solutions",
+      period: "August 2022 - June 2024",
       description: [
-        "Built responsive web applications using React and Node.js",
-        "Integrated third-party APIs and payment processing systems",
-        "Optimized database queries improving performance by 40%",
-      ],
-    },
-    {
-      id: 3,
-      title: "Junior Developer",
-      company: "Digital Agency",
-      period: "2018 - 2020",
-      description: [
-        "Developed and maintained client websites using modern frameworks",
-        "Collaborated with designers to implement pixel-perfect UIs",
-        "Participated in agile development processes",
+        "Developed an e-commerce website using JavaScript and HTML resulting in $20k+ in sales",
+        "Increased visibility of products by making it more accessible and user-friendly leading to 1000+ products sold",
       ],
     },
   ];
@@ -83,14 +71,14 @@ const ExperienceSection = () => {
               <div className="flex md:flex-row flex-col md:justify-between md:items-center mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-[#000000] mb-1">
-                    {exp.title}
-                  </h3>
-                  <p className="text-xl text-[#4B9CD3] font-semibold">
                     {exp.company}
+                  </h3>
+                  <p className="text-xl text-[#000000]">
+                    {exp.title}
                   </p>
                 </div>
                 <div className="md:mt-0 mt-2">
-                  <span className="inline-block px-4 py-2 bg-[#4B9CD3] text-[#000000] rounded-full font-medium">
+                  <span className="inline-block px-4 py-2 bg-[#4B9CD3] text-white rounded-full font-medium">
                     {exp.period}
                   </span>
                 </div>

@@ -7,17 +7,12 @@
 }
 
 @theme {
-    --color-black: #222123;
-    --color-main-bg: #232224;
-    --color-white: #4B9CD3;
-    --color-dark-brown: #000000;
-    --color-mid-brown: #4B9CD3;
-    --color-light-brown: #4B9CD3;
-    --color-red-brown: #000000;
-    --color-yellow-brown: #4B9CD3;
-    --color-milk-yellow: #F9FAFB;
-    --color-red: #000000;
-    --color-milk: #FAF9F6;
+    --color-black: #000000;
+    --color-main-bg: #FAF9F6;
+    --color-white: #ffffff;
+    --color-blue: #4B9CD3;
+    --color-off-white: #FAF9F6;
+    --color-light-gray: #F9FAFB;
     --font-sans: "Antonio", sans-serif;
     --font-paragraph: "ProximaNova, sans-serif";
 }
@@ -61,37 +56,41 @@ body::-webkit-scrollbar {
     }
 
     .hero-container {
-        @apply relative bg-milk w-screen h-dvh overflow-hidden;
+        @apply relative bg-off-white w-screen h-dvh overflow-hidden;
 
         .hero-content {
             @apply relative z-10 w-full h-full flex flex-col justify-center items-start 2xl:pl-20 md:pl-16 pl-8;
 
             .hero-title {
-                @apply text-dark-brown 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold uppercase leading-[9vw] tracking-[-.35vw] mb-5;
+                @apply text-black 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold uppercase leading-[9vw] tracking-[-.35vw] mb-5;
+            }
+
+            .hero-subtitle {
+                @apply 2xl:text-[4rem] md:text-[3rem] text-[1.5rem] font-bold text-black mb-8;
             }
 
             .hero-text-scroll {
-                @apply rotate-[-3deg] mb-8 border-[.5vw] border-milk;
+                @apply rotate-[-3deg] mb-8 border-[.5vw] border-off-white;
 
                 .hero-subtitle {
-                    @apply bg-mid-brown;
+                    @apply bg-blue;
                 }
 
                 h1 {
-                    @apply uppercase 2xl:text-[8.5rem] md:text-[6.5rem] text-[3.3rem] font-bold text-[#FAF9F6] leading-[9vw] tracking-[-.35vw] 2xl:px-[1.2vw] px-3 2xl:pb-[1vw] pb-5 2xl:py-0 py-3;
+                    @apply uppercase 2xl:text-[8.5rem] md:text-[8rem] text-[4rem] font-bold text-[#FAF9F6] leading-[9vw] tracking-[-.35vw] 2xl:px-[1.2vw] px-3 2xl:pb-[1vw] pb-5 2xl:py-0 py-3;
                 }
             }
 
             h2 {
-                @apply font-paragraph text-dark-brown text-left md:max-w-lg max-w-sm md:text-lg leading-[115%] mt-3;
+                @apply font-paragraph text-black text-left md:max-w-lg max-w-sm md:text-lg leading-[115%] mt-3;
             }
 
             .hero-button {
-                @apply text-dark-brown bg-light-brown uppercase font-bold text-lg rounded-full md:p-5 p-3 md:px-16 px-10 hover:bg-[#3A7FB8] hover:scale-110 hover:shadow-xl transition-all duration-300 cursor-pointer flex items-center gap-2 justify-center;
+                @apply text-white bg-blue uppercase font-bold text-lg rounded-full md:p-5 p-3 md:px-16 px-10 hover:bg-[#3A7FB8] hover:scale-110 hover:shadow-xl transition-all duration-300 cursor-pointer flex items-center gap-2 justify-center;
             }
 
             .hero-button-secondary {
-                @apply text-light-brown bg-transparent border-2 border-light-brown uppercase font-bold text-lg rounded-full md:p-5 p-3 md:px-8 px-6 hover:bg-light-brown hover:text-dark-brown hover:scale-110 hover:shadow-xl transition-all duration-300 cursor-pointer flex items-center gap-2 justify-center;
+                @apply text-blue bg-transparent border-2 border-blue uppercase font-bold text-lg rounded-full md:p-5 p-3 md:px-8 px-6 hover:bg-blue hover:text-white hover:scale-110 hover:shadow-xl transition-all duration-300 cursor-pointer flex items-center gap-2 justify-center;
             }
         }
     }
@@ -126,14 +125,14 @@ body::-webkit-scrollbar {
     }
 
     .flavor-section {
-        @apply min-h-dvh bg-milk;
+        @apply min-h-dvh bg-off-white;
 
         .flavor-text-scroll {
-            @apply rotate-[-3deg] md:translate-y-5 border-[.5vw] border-milk absolute z-10;
+            @apply rotate-[-3deg] md:translate-y-5 border-[.5vw] border-off-white absolute z-10;
         }
 
         .first-text-split h1 {
-            @apply md:text-center text-dark-brown;
+            @apply md:text-center text-black;
         }
 
         .second-text-split h1 {
@@ -155,7 +154,7 @@ body::-webkit-scrollbar {
                 }
 
                 h1 {
-                    @apply absolute md:bottom-10 md:left-10 bottom-5 left-5 text-milk md:text-6xl text-3xl font-semibold uppercase tracking-tighter;
+                    @apply absolute md:bottom-10 md:left-10 bottom-5 left-5 text-off-white md:text-6xl text-3xl font-semibold uppercase tracking-tighter;
                 }
             }
         }
@@ -197,7 +196,7 @@ body::-webkit-scrollbar {
         @apply min-h-dvh bg-[#000000] overflow-hidden relative;
 
         p {
-            @apply text-milk font-paragraph text-center text-lg;
+            @apply text-off-white font-paragraph text-center text-lg;
         }
 
         .first-title {
@@ -234,13 +233,13 @@ body::-webkit-scrollbar {
     }
 
     .testimonials-section {
-        @apply bg-milk relative w-full h-[120dvh];
+        @apply bg-off-white relative w-full h-[120dvh];
 
         .pin-box {
             @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
 
             .vd-card {
-                @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-milk;
+                @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-off-white;
             }
         }
 
@@ -261,7 +260,7 @@ body::-webkit-scrollbar {
         }
 
         .copyright-box {
-            @apply 2xl:absolute w-full md:px-10 px-5 py-7 bottom-0 text-milk opacity-50 md:text-lg font-paragraph flex gap-7 md:flex-row flex-col-reverse md:justify-between justify-center items-center;
+            @apply 2xl:absolute w-full md:px-10 px-5 py-7 bottom-0 text-off-white opacity-50 md:text-lg font-paragraph flex gap-7 md:flex-row flex-col-reverse md:justify-between justify-center items-center;
 
             p {
                 @apply text-center;

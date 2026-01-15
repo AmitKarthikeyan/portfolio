@@ -6,23 +6,23 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "Mapache",
-      description: "A modern web application built with React and Node.js",
+      description: "Designed a real-time ingestion service in Go handling 2,000+ events/second with less than 250ms end-to-end latency, utilizing Docker for containerized deployment",
       image: "/images/p1.png",
-      tech: ["React", "Node.js", "MongoDB"],
+      tech: ["Go", "Python", "Docker", "React", "TypeScript"],
     },
     {
       id: 2,
       title: "Factify",
-      description: "E-commerce platform with advanced features",
+      description: "Shipped a cross-platform Chrome extension in JavaScript with over 1k downloads that fact-checks social media content across Twitter, Instagram, and Facebook using Google Gemini, processing 250+  posts daily",
       image: "/images/p2.png",
-      tech: ["Next.js", "TypeScript", "Stripe"],
+      tech: ["GCP", "React", "JavaScript", "Chrome API"],
     },
     {
       id: 3,
       title: "SlipStream",
-      description: "Mobile-first responsive portfolio website",
+      description: "Built an Atlassian Forge app that ingests Confluence comments, maps them to the correct Jira issue, and posts a formatted Jira comment that preserves the original author attribution for end-to-end traceability",
       image: "/images/p3.png",
-      tech: ["React", "Tailwind", "GSAP"],
+      tech: ["JavaScript", "Jira", "HTML", "Forge"],
     },
   ];
 
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
                   {project.tech.map((tech, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-[#4B9CD3] text-[#000000] rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-[#4B9CD3] text-white rounded-full text-sm font-medium"
                     >
                       {tech}
                     </span>

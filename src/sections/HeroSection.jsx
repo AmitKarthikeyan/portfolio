@@ -74,8 +74,7 @@ const HeroSection = () => {
           </div>
 
           <h2>
-            Crafting elegant solutions through clean code and creative design.
-            Building digital experiences that make a difference.
+          I'm Amit, a Junior Computer Science student at UC Santa Barbara. I have experience across the stack and in Python, Java, Go, JavaScript, and C++. I’m deeply interested in AI and ML, and have hands-on experience taking models to production.
           </h2>
 
           <div className='flex gap-4 md:mt-16 mt-10 flex-wrap'>
