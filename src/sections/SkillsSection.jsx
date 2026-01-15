@@ -3,41 +3,38 @@ import gsap from "gsap";
 
 const SkillsSection = () => {
   const skills = [
-    { name: "React", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "TypeScript", level: 80 },
-    { name: "Node.js", level: 75 },
-    { name: "CSS/Tailwind", level: 90 },
-    { name: "GSAP", level: 85 },
-    { name: "Git", level: 80 },
-    { name: "MongoDB", level: 70 },
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Python",
+    "Java",
+    "Go",
+    "C++",
+    "HTML/CSS",
+    "Tailwind CSS",
+    "Git",
+    "MongoDB",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "Machine Learning",
+    "AI/ML",
+    "REST APIs",
   ];
 
   useGSAP(() => {
-    gsap.from(".skill-item", {
+    gsap.from(".skill-box", {
       scrollTrigger: {
         trigger: ".skills-section",
         start: "top center+=100",
         toggleActions: "play none none reverse",
       },
-      x: -100,
+      scale: 0,
       opacity: 0,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: "power3.out",
-    });
-
-    gsap.from(".skill-bar-fill", {
-      scrollTrigger: {
-        trigger: ".skills-section",
-        start: "top center+=100",
-        toggleActions: "play none none reverse",
-      },
-      width: 0,
-      duration: 1.5,
-      stagger: 0.15,
-      ease: "power3.out",
-      delay: 0.4,
+      duration: 0.5,
+      stagger: 0.05,
+      ease: "back.out(1.7)",
     });
   });
 
@@ -48,24 +45,14 @@ const SkillsSection = () => {
           <h1 className="general-title text-center">Skills</h1>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-3">
             {skills.map((skill, index) => (
-              <div key={index} className="skill-item">
-                <div className="flex justify-between mb-2">
-                  <span className="text-lg font-bold text-[#000000]">
-                    {skill.name}
-                  </span>
-                  <span className="text-[#4B9CD3] font-bold">
-                    {skill.level}%
-                  </span>
-                </div>
-                <div className="h-3 bg-[#F9FAFB] rounded-full overflow-hidden border-2 border-[#4B9CD3]">
-                  <div
-                    className="skill-bar-fill h-full bg-[#4B9CD3] rounded-full"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
+              <div
+                key={index}
+                className="skill-box px-6 py-3 bg-white border-2 border-[#4B9CD3] rounded-full text-[#000000] font-semibold hover:bg-[#4B9CD3] hover:text-white transition-all duration-300 cursor-default"
+              >
+                {skill}
               </div>
             ))}
           </div>

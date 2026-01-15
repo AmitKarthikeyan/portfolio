@@ -50,7 +50,7 @@ const Navbar = () => {
 
     return (
         <nav className='fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/95 backdrop-blur-sm border-b border-[#000000]/20'>
-            <div className='container mx-auto flex justify-between items-center md:px-16 px-8 py-5'>
+            <div className='flex justify-between items-center md:px-8 px-5 py-5 md:pl-8 pl-5 md:pr-16 pr-8'>
                 <a 
                     href='#hero' 
                     onClick={(e) => handleClick(e, '#hero')}
