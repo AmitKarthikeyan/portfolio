@@ -3,29 +3,16 @@ import gsap from "gsap";
 
 const ContactSection = () => {
   useGSAP(() => {
-    gsap.from(".contact-form", {
+    gsap.from(".contact-button", {
       scrollTrigger: {
         trigger: ".contact-section",
         start: "top center+=100",
         toggleActions: "play none none reverse",
       },
-      y: 80,
+      y: 50,
       opacity: 0,
       duration: 1,
       ease: "power3.out",
-    });
-
-    // Animate form inputs
-    gsap.from(".contact-form input, .contact-form textarea, .contact-form button", {
-      scrollTrigger: {
-        trigger: ".contact-section",
-        start: "top center+=150",
-      },
-      y: 30,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.1,
-      ease: "power2.out",
     });
   });
 
@@ -36,60 +23,16 @@ const ContactSection = () => {
           <h1 className="general-title text-center">Contact</h1>
         </div>
 
-        <div className="max-w-2xl mx-auto contact-form">
-          <form className="space-y-6">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-lg font-bold text-[#000000] mb-2"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-3 rounded-lg border-2 border-[#4B9CD3] bg-white text-[#000000] focus:outline-none focus:border-[#4B9CD3] transition-colors"
-                placeholder="Your name"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-lg font-bold text-[#000000] mb-2"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-3 rounded-lg border-2 border-[#4B9CD3] bg-white text-[#000000] focus:outline-none focus:border-[#4B9CD3] transition-colors"
-                placeholder="your.email@example.com"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-lg font-bold text-[#000000] mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows="6"
-                className="w-full px-4 py-3 rounded-lg border-2 border-[#4B9CD3] bg-white text-[#000000] focus:outline-none focus:border-[#4B9CD3] transition-colors resize-none"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full py-4 bg-[#4B9CD3] text-white font-bold text-lg rounded-lg hover:bg-[#3A7FB8] hover:text-white transition-colors duration-300 border-2 border-[#4B9CD3]"
-            >
-              Send Message
-            </button>
-          </form>
+        <div className="max-w-2xl mx-auto flex flex-col items-center">
+          <p className="text-center text-xl text-[#000000] mb-8">
+            Feel free to reach out!
+          </p>
+          <a
+            href="mailto:karthikeyanamit@gmail.com"
+            className="contact-button w-full md:w-auto px-12 py-4 bg-[#4B9CD3] text-white font-bold text-lg rounded-lg hover:bg-[#3A7FB8] hover:text-white transition-colors duration-300 border-2 border-[#4B9CD3] text-center"
+          >
+            karthikeyanamit@gmail.com
+          </a>
         </div>
       </div>
     </section>
