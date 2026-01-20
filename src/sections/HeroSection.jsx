@@ -105,28 +105,6 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-
-        {/* Bouncing Arrow */}
-        <div className='absolute bottom-10 left-1/2 -translate-x-1/2 z-20'>
-          <a href="#experience" onClick={(e) => {
-            e.preventDefault();
-            document.querySelector('#experience')?.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            <div className='bouncing-arrow'>
-              <svg 
-                width="40" 
-                height="40" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2"
-                className='text-[#4B9CD3]'
-              >
-                <path d="M12 5v14M19 12l-7 7-7-7"/>
-              </svg>
-            </div>
-          </a>
-        </div>
       </div>
     </section>
   );
