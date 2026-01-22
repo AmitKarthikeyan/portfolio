@@ -78,7 +78,7 @@ const HeroSection = () => {
           </h2>
 
           <div className='flex gap-4 md:mt-16 mt-10 flex-wrap'>
-            <a href="/Amit_Karthikeyan_Resume.pdf" target="_blank" rel="noopener noreferrer" className='hero-button'>
+            <a href="/portfolio/Amit_Karthikeyan_Resume.pdf" target="_blank" rel="noopener noreferrer" className='hero-button'>
               <p>Resume</p>
             </a>
             <a 
