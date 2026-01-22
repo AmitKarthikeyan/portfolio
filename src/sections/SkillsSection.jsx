@@ -17,7 +17,7 @@ const SkillsSection = () => {
     },
     {
       category: "Libraries",
-      skills: ["NumPy", "pandas", "PyTorch", "Hugging Face", "LangChain", "Matplotlib"]
+      skills: ["NumPy", "pandas", "PyTorch", "Hugging Face", "LangChain", "Matplotlib", "Scikit-learn"]
     }
   ];
 
