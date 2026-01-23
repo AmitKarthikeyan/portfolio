@@ -13,7 +13,7 @@ const SkillsSection = () => {
     },
     {
       category: "Developer Tools",
-      skills: ["Git", "AWS", "Linux/Unix", "Jira", "Docker", "Tableau", "GCP", "Vite", "CI/CD", "Agile"]
+      skills: ["Git", "AWS", "Linux/Unix", "Jira", "Docker", "Excel", "Tableau", "GCP", "Vite", "CI/CD", "Agile"]
     },
     {
       category: "Libraries",
