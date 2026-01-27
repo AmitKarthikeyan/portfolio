@@ -12,13 +12,20 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
+      title: "SignalBench",
+      description: "Benchmarked logistic regression, gradient boosting, and neural baselines with ROC-AUC and calibration analysis",
+      image: "/images/p1.png",
+      tech: ["Python", "PostgreSQL", "Redis", "React"],
+    },
+    {
+      id: 3,
       title: "Factify",
       description: "Shipped a cross-platform Chrome extension in JavaScript with over 1k downloads that fact-checks social media content across Twitter, Instagram, and Facebook using Google Gemini, processing 250+  posts daily",
       image: "/images/p2.png",
       tech: ["GCP", "React", "JavaScript", "Chrome API"],
     },
     {
-      id: 3,
+      id: 4,
       title: "SlipStream",
       description: "Built an Atlassian Forge app that ingests Confluence comments, maps them to the correct Jira issue, and posts a formatted Jira comment that preserves the original author attribution for end-to-end traceability",
       image: "/images/p3.png",
