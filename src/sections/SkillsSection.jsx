@@ -16,8 +16,8 @@ const SkillsSection = () => {
       skills: ["Git", "GitHub", "AWS", "Google Cloud", "Linux/Unix", "Jira", "Docker", "Excel", "CI/CD"]
     },
     {
-      category: "Libraries",
-      skills: ["NumPy", "pandas", "PyTorch", "Hugging Face", "LangChain", "Matplotlib", "Scikit-learn"]
+      category: "Databases",
+      skills: ["PostgreSQL", "Pinecone", "Firebase Firestore", "DynamoDB", "Redis"]
     }
   ];
 
