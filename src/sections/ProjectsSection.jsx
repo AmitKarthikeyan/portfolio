@@ -20,7 +20,7 @@ const ProjectsSection = () => {
     {
       id: 3,
       title: "Factify",
-      description: "Shipped a cross-platform Chrome extension in JavaScript with over 1k downloads that fact-checks social media content across Twitter, Instagram, and Facebook using Google Gemini, processing 250+  posts daily",
+      description: "Shipped a cross-platform Chrome extension in JavaScript that fact-checks social media content across Twitter, Instagram, and Facebook using Google Gemini, processing 250+  posts daily",
       image: "/images/p2.png",
       tech: ["GCP", "React", "JavaScript", "Next.js", "Chrome API"],
     },
