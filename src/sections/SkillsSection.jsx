@@ -9,7 +9,7 @@ const SkillsSection = () => {
     },
     {
       category: "Frameworks",
-      skills: ["React", "Node.js", "Express", "FastAPI", "Flask", "PyTorch", "NumPy", "Pandas", "Matplotlib"]
+      skills: ["React", "Node.js", "Express.js", "Next.js", "FastAPI", "Flask", "PyTorch", "NumPy", "Pandas", "Matplotlib"]
     },
     {
       category: "Developer Tools",
