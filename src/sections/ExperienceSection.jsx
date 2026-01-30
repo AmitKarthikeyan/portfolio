@@ -9,6 +9,7 @@ const ExperienceSection = () => {
       company: "Autoinvent",
       period: "July 2025 - Present",
       description: [
+        "Built an MVP for an AI powered legal drafting that helped secure $500K in pre-seed funding for development",
         "Architected a RAG pipeline using Google Gemini and vector embeddings to automate legal claim generation, processing unstructured text inputs with less than 2 seconds latency",
         "Developed a scalable React 18 + Vite front-end with real-time document updates and responsive UI, supporting concurrent editing and smooth navigation across complex patent documents",
         "Engineered a multi-tenant data layer using Firestore and Cloud KMS, enforcing row-level security policies to ensure strict data isolation for legal compliance",
