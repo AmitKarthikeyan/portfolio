@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       title: "SignalBench",
       description: "Benchmarked logistic regression, gradient boosting, and neural baselines with ROC-AUC and calibration analysis",
       image: "/images/p1.png",
-      tech: ["Python", "PostgreSQL", "Redis", "React"],
+      tech: ["Python", "FastAPI", "PostgreSQL", "Redis", "React"],
     },
     {
       id: 3,
