@@ -19,10 +19,11 @@ const ExperienceSection = () => {
       id: 2,
       title: "Software Engineer Intern",
       company: "DMS Solutions",
-      period: "August 2022 - June 2024",
+      period: "August 2023 - June 2024",
       description: [
-        "Developed an e-commerce website using JavaScript and HTML resulting in $20k+ in sales",
-        "Increased visibility of products by making it more accessible and user-friendly leading to 1000+ products sold",
+        "Developed an e-commerce website using JavaScript and HTML resulting in \$20k+ in online sales",
+        "Improved UI and site navigation to increase product discoverability, contributing to 1,000+ products sold",
+        "Integrated payments, shipping, tax logic, and basic analytics to track conversions and sales performance",
       ],
     },
   ];
